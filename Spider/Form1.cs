@@ -64,7 +64,7 @@ namespace Spider {
 			if (this.btnStart.Text == "开始") {
 				Uri uri = null;
 				if (!Uri.TryCreate(this.txtUrl.Text, UriKind.Absolute, out uri)) {
-					Lib.Alert("请输入正确格式的“入口地址”(URL)！");
+					MessageBox.Show("请输入正确格式的“入口地址”(URL)！", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 					this.txtUrl.Focus();
 					return;
 				}

@@ -58,10 +58,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\baike\Core\bin\Common.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -78,10 +74,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HttpRequest.cs" />
+    <Compile Include="JSDecoder.cs" />
+    <Compile Include="Lib.cs" />
     <Compile Include="MyListView.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="WorkQueue.cs" />
     <None Include="App.config" />
     <Compile Include="NicSpider.cs" />
   </ItemGroup>
